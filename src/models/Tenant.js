@@ -5,7 +5,11 @@ const TenantSchema = new mongoose.Schema({
     type: Date,
     default: Date.now
   },
-  name: {
+  first_name: {
+    type: String,
+    required: true
+  },
+  last_name: {
     type: String,
     required: true
   },
@@ -13,7 +17,7 @@ const TenantSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  phone_number: {
+  phone: {
     type: String,
     required: true
   },
@@ -66,10 +70,14 @@ const TenantSchema = new mongoose.Schema({
       type: String,
       required: true
     },
-    ref_number: {
+    ref_phone: {
       type: String,
       required: true
     },
+  },
+  status: {
+    type: String,
+    required: true
   },
   contracts: [
     {

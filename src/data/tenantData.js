@@ -1,8 +1,9 @@
 const tenantData = [
   {
-    name: 'John Fredrick',
+    first_name: 'John',
+    last_name: 'Fredrick',
     email: 'jfred@gmail.com',
-    phone_number: 3162134879,
+    phone: 3162134879,
     dl_number: 483729847329,
     dl_state: 'KS',
     dependants: ['Jim Fredrick', 'Jackie Fredrick'],
@@ -16,13 +17,15 @@ const tenantData = [
       end_date: Date.now(),
       why_left: 'New job',
       ref_name: 'Jimmy Doe',
-      ref_number: 3164857590
-    }
+      ref_phone: 3164857590
+    },
+    status: 'prospect'
   },
   {
-    name: 'Tom Black',
+    first_name: 'Tom',
+    last_name: 'Black',
     email: 'tblack@gmail.com',
-    phone_number: 3167853279,
+    phone: 3167853279,
     dl_number: 183724673829,
     dl_state: 'KS',
     dependants: ['Tim Rich', 'Jamie Hugh'],
@@ -36,13 +39,15 @@ const tenantData = [
       end_date: Date.now(),
       why_left: 'Moved further',
       ref_name: 'Kim Grey',
-      ref_number: 3167038642
-    }
+      ref_phone: 3167038642
+    },
+    status: 'prospect'
   },
   {
-    name: 'Amy Reed',
+    first_name: 'Amy',
+    last_name: 'Reed',
     email: 'areed@gmail.com',
-    phone_number: 3167849203,
+    phone: 3167849203,
     dl_number: 78397346395,
     dl_state: 'KS',
     dependants: ['Connie Vern', 'Herold Relm'],
@@ -56,13 +61,15 @@ const tenantData = [
       end_date: Date.now(),
       why_left: 'High rent',
       ref_name: 'Randy Redman',
-      ref_number: 3167846772
-    }
+      ref_phone: 3167846772
+    },
+    status: 'previous'
   },
   {
-    name: 'Sara Little',
+    first_name: 'Sara',
+    last_name: 'Little',
     email: 'saralittle@gmail.com',
-    phone_number: 3168737462,
+    phone: 3168737462,
     dl_number: 84093347854,
     dl_state: 'KS',
     dependants: ['Hannah Little', 'Nick Little'],
@@ -76,13 +83,15 @@ const tenantData = [
       end_date: Date.now(),
       why_left: 'New job',
       ref_name: 'Jack Diver',
-      ref_number: 3168947363
-    }
+      ref_phone: 3168947363
+    },
+    status: 'previous'
   },
   {
-    name: 'Lance Strong',
+    first_name: 'Lance',
+    last_name: 'Strong',
     email: 'lstrong@gmail.com',
-    phone_number: 3162635478,
+    phone: 3162635478,
     dl_number: 47839275673,
     dl_state: 'KS',
     dependants: ['Fred Strong', 'Amy Strong'],
@@ -96,8 +105,9 @@ const tenantData = [
       end_date: Date.now(),
       why_left: 'Transferred jobs',
       ref_name: 'Michael Kelter',
-      ref_number: 3164873920
-    }
+      ref_phone: 3164873920
+    },
+    status: 'prospect'
   }
 ];
 

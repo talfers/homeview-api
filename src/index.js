@@ -8,6 +8,7 @@ const session = require('express-session');
 const mongoURI = require('./config/keys').mongoURI;
 const userRoutes = require('./routes/users');
 const tenantRoutes = require('./routes/tenants');
+const homeRoutes = require('./routes/homes');
 const sessionSecret = require('./config/keys').sessionSecret;
 const Tenant = require('./models/Tenant');
 const Home = require('./models/Home');
@@ -30,6 +31,7 @@ app.use(passport.session());
 // Use Routes
 app.use(userRoutes);
 app.use(tenantRoutes);
+app.use(homeRoutes);
 
 // Connect to mongoDB
 mongoose.connect(

@@ -31,6 +31,12 @@ const HomeSchema = new mongoose.Schema({
     type: Boolean,
     default: false
   },
+  expenses: {
+    type: []
+  },
+  notes: {
+    type: []
+  },
   contracts: [
     {
       id: {
